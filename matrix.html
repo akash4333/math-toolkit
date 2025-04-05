@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Matrix Calculator | Math Toolkit</title>
+  <link rel="stylesheet" href="../css/main.css">
+  <link rel="stylesheet" href="../css/tools.css">
+</head>
+<body>
+  <header class="header">
+    <nav class="nav">
+      <a href="../index.html" class="logo"><i class="fas fa-calculator"></i> Math Toolkit</a>
+      <div class="nav-links">
+        <a href="../index.html#tools" class="nav-link">All Tools</a>
+        <button id="theme-toggle" class="nav-link">🌙</button>
+      </div>
+    </nav>
+  </header>
+
+  <main class="main tool-page">
+    <div class="tool-container">
+      <h1 class="tool-title"><i class="fas fa-table"></i> Matrix Calculator</h1>
+      
+      <div class="calculator-card">
+        <div class="matrix-controls">
+          <div class="matrix-size-selector">
+            <label for="matrix-size">Matrix Size:</label>
+            <select id="matrix-size" class="modern-input">
+              <option value="2">2×2</option>
+              <option value="3">3×3</option>
+            </select>
+          </div>
+          
+          <div class="matrix-operation-selector">
+            <label for="matrix-operation">Operation:</label>
+            <select id="matrix-operation" class="modern-input">
+              <option value="add">Addition (A + B)</option>
+              <option value="subtract">Subtraction (A - B)</option>
+              <option value="multiply">Multiplication (A × B)</option>
+              <option value="transpose">Transpose (Aᵀ)</option>
+              <option value="determinant">Determinant (|A|)</option>
+            </select>
+          </div>
+        </div>
+        
+        <div class="matrix-section">
+          <h3>Matrix A</h3>
+          <div id="matrix-a"></div>
+        </div>
+        
+        <div class="matrix-section">
+          <h3>Matrix B</h3>
+          <div id="matrix-b"></div>
+        </div>
+        
+        <button class="modern-button" id="calculate-matrix">Calculate</button>
+        
+        <div class="matrix-result-section">
+          <h3>Result</h3>
+          <div id="matrix-result"></div>
+        </div>
+      </div>
+      
+      <div class="tool-info">
+        <h3>Matrix Operations</h3>
+        <p>This calculator supports the following matrix operations:</p>
+        <ul>
+          <li><strong>Addition:</strong> Element-wise addition of two matrices</li>
+          <li><strong>Subtraction:</strong> Element-wise subtraction of two matrices</li>
+          <li><strong>Multiplication:</strong> Matrix product of two matrices</li>
+          <li><strong>Transpose:</strong> Flips a matrix over its diagonal</li>
+          <li><strong>Determinant:</strong> A scalar value computed from a square matrix</li>
+        </ul>
+      </div>
+    </div>
+  </main>
+
+  <footer class="footer">
+    <p>© 2023 Math Toolkit. All rights reserved.</p>
+    <div class="social-links">
+      <a href="#" class="social-link"><i class="fab fa-github"></i></a>
+      <a href="#" class="social-link"><i class="fab fa-twitter"></i></a>
+    </div>
+  </footer>
+
+  <script src="../js/main.js"></script>
+  <script src="../js/tools.js"></script>
+</body>
+</html>

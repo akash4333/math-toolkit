@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Prime Checker | Math Toolkit</title>
+  <link rel="stylesheet" href="../css/main.css">
+  <link rel="stylesheet" href="../css/tools.css">
+</head>
+<body>
+  <header class="header">
+    <nav class="nav">
+      <a href="../index.html" class="logo"><i class="fas fa-calculator"></i> Math Toolkit</a>
+      <div class="nav-links">
+        <a href="../index.html#tools" class="nav-link">All Tools</a>
+        <button id="theme-toggle" class="nav-link">🌙</button>
+      </div>
+    </nav>
+  </header>
+
+  <main class="main tool-page">
+    <div class="tool-container">
+      <h1 class="tool-title"><i class="fas fa-infinity"></i> Prime Number Checker</h1>
+      
+      <div class="calculator-card">
+        <div class="input-group">
+          <label for="prime-num">Enter a number:</label>
+          <input type="number" id="prime-num" class="modern-input" placeholder="Positive integer">
+          
+          <button class="modern-button" id="check-prime">Check Primality</button>
+        </div>
+        
+        <div class="result-display" id="prime-result">
+          Enter a number to check if it's prime
+        </div>
+        
+        <div class="prime-history">
+          <h3>Recent Checks</h3>
+          <div class="prime-history-list" id="prime-history-list"></div>
+        </div>
+      </div>
+      
+      <div class="tool-info">
+        <h3>About Prime Numbers</h3>
+        <p>A prime number is a natural number greater than 1 that has no positive divisors other than 1 and itself.</p>
+        <p>The first few prime numbers are: 2, 3, 5, 7, 11, 13, 17, 19, 23, 29, ...</p>
+        <p>This tool checks for primality using trial division up to the square root of the number.</p>
+      </div>
+    </div>
+  </main>
+
+  <footer class="footer">
+    <p>© 2023 Math Toolkit. All rights reserved.</p>
+    <div class="social-links">
+      <a href="#" class="social-link"><i class="fab fa-github"></i></a>
+      <a href="#" class="social-link"><i class="fab fa-twitter"></i></a>
+    </div>
+  </footer>
+
+  <script src="../js/main.js"></script>
+  <script src="../js/tools.js"></script>
+</body>
+</html>

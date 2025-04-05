@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Graphing Calculator | Math Toolkit</title>
+  <link rel="stylesheet" href="../css/main.css">
+  <link rel="stylesheet" href="../css/tools.css">
+</head>
+<body>
+  <header class="header">
+    <nav class="nav">
+      <a href="../index.html" class="logo"><i class="fas fa-calculator"></i> Math Toolkit</a>
+      <div class="nav-links">
+        <a href="../index.html#tools" class="nav-link">All Tools</a>
+        <button id="theme-toggle" class="nav-link">🌙</button>
+      </div>
+    </nav>
+  </header>
+
+  <main class="main tool-page">
+    <div class="tool-container">
+      <h1 class="tool-title"><i class="fas fa-chart-line"></i> Graphing Calculator</h1>
+      
+      <div class="calculator-card">
+        <div class="graph-controls">
+          <div class="graph-function-input">
+            <label for="graph-function">Function:</label>
+            <input type="text" id="graph-function" class="modern-input" value="sin(x)" placeholder="e.g., x^2 + 3*x - 2">
+          </div>
+          
+          <div class="graph-options">
+            <div class="input-group">
+              <label for="x-min">X Min:</label>
+              <input type="number" id="x-min" class="modern-input" value="-10">
+            </div>
+            
+            <div class="input-group">
+              <label for="x-max">X Max:</label>
+              <input type="number" id="x-max" class="modern-input" value="10">
+            </div>
+          </div>
+        </div>
+        
+        <button class="modern-button" id="draw-graph">Draw Graph</button>
+        
+        <canvas id="graph-canvas"></canvas>
+      </div>
+      
+      <div class="tool-info">
+        <h3>Function Syntax</h3>
+        <p>Enter mathematical functions using standard notation:</p>
+        <ul>
+          <li><strong>Basic operations:</strong> +, -, *, /</li>
+          <li><strong>Exponents:</strong> x^2 or x**2</li>
+          <li><strong>Trig functions:</strong> sin(x), cos(x), tan(x)</li>
+          <li><strong>Square root:</strong> sqrt(x)</li>
+          <li><strong>Logarithms:</strong> log(x) (base 10), ln(x) (natural log)</li>
+          <li><strong>Constants:</strong> PI, E</li>
+        </ul>
+        <p>Example functions: 2*x^3 - 5*x + 3, sin(x)/x, sqrt(x^2 + 1)</p>
+      </div>
+    </div>
+  </main>
+
+  <footer class="footer">
+    <p>© 2023 Math Toolkit. All rights reserved.</p>
+    <div class="social-links">
+      <a href="#" class="social-link"><i class="fab fa-github"></i></a>
+      <a href="#" class="social-link"><i class="fab fa-twitter"></i></a>
+    </div>
+  </footer>
+
+  <script src="../js/main.js"></script>
+  <script src="../js/tools.js"></script>
+</body>
+</html>

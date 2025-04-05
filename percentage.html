@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Percentage Calculator | Math Toolkit</title>
+  <link rel="stylesheet" href="../css/main.css">
+  <link rel="stylesheet" href="../css/tools.css">
+</head>
+<body>
+  <header class="header">
+    <nav class="nav">
+      <a href="../index.html" class="logo"><i class="fas fa-calculator"></i> Math Toolkit</a>
+      <div class="nav-links">
+        <a href="../index.html#tools" class="nav-link">All Tools</a>
+        <button id="theme-toggle" class="nav-link">🌙</button>
+      </div>
+    </nav>
+  </header>
+
+  <main class="main tool-page">
+    <div class="tool-container">
+      <h1 class="tool-title"><i class="fas fa-percentage"></i> Percentage Calculator</h1>
+      
+      <div class="calculator-card">
+        <div class="percentage-options">
+          <div class="percentage-option active" data-type="of">X% of Y</div>
+          <div class="percentage-option" data-type="increase">X% increase</div>
+          <div class="percentage-option" data-type="decrease">X% decrease</div>
+          <div class="percentage-option" data-type="difference">X is what % of Y?</div>
+        </div>
+        
+        <div class="input-group">
+          <div class="input-row">
+            <input type="number" id="percent-of" class="modern-input" placeholder="X">
+            <span>%</span>
+            <span>of</span>
+            <input type="number" id="percent-number" class="modern-input" placeholder="Y">
+          </div>
+          <button class="modern-button" id="calculate-percent">Calculate</button>
+        </div>
+        
+        <div class="result-display">
+          <span>Result: </span>
+          <span id="percent-result" class="result-value">0</span>
+          <button class="copy-btn" data-copy="0"><i class="far fa-copy"></i></button>
+        </div>
+      </div>
+      
+      <div class="tool-info">
+        <h3>How to calculate percentages</h3>
+        <p>To calculate X% of Y, multiply Y by X and divide by 100.</p>
+        <p>Example: 20% of 50 = (20 × 50) / 100 = 10</p>
+      </div>
+    </div>
+  </main>
+
+  <footer class="footer">
+    <p>© 2023 Math Toolkit. All rights reserved.</p>
+    <div class="social-links">
+      <a href="#" class="social-link"><i class="fab fa-github"></i></a>
+      <a href="#" class="social-link"><i class="fab fa-twitter"></i></a>
+    </div>
+  </footer>
+
+  <script src="../js/main.js"></script>
+  <script src="../js/tools.js"></script>
+</body>
+</html>

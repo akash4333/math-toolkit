@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Modern Math Toolkit</title>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="css/main.css">
+</head>
+<body>
+    <header class="header">
+        <nav class="nav">
+            <a href="index.html" class="logo"><i class="fas fa-calculator"></i> Math Toolkit</a>
+            <div class="nav-links">
+                <a href="#tools" class="nav-link">Tools</a>
+                <a href="#about" class="nav-link">About</a>
+                <button id="theme-toggle" class="nav-link">🌙</button>
+            </div>
+        </nav>
+    </header>
+
+    <main class="main">
+        <section class="hero">
+            <h1 class="hero-title">Modern Math Solutions</h1>
+            <p class="hero-subtitle">Your all-in-one mathematics toolkit with 8 powerful calculators</p>
+        </section>
+
+        <div class="tool-grid" id="tools">
+            <!-- Percentage Calculator -->
+            <div class="tool-card" onclick="location.href='tools/percentage.html'">
+                <div class="tool-icon"><i class="fas fa-percentage"></i></div>
+                <h3>Percentage Calculator</h3>
+                <p>Calculate percentages, increases, and differences</p>
+                <div class="tool-cta">Go to Tool →</div>
+            </div>
+            
+            <!-- Pythagorean Theorem -->
+            <div class="tool-card" onclick="location.href='tools/pythagorean.html'">
+                <div class="tool-icon"><i class="fas fa-triangle"></i></div>
+                <h3>Pythagorean Theorem</h3>
+                <p>Find hypotenuse or missing sides of right triangles</p>
+                <div class="tool-cta">Go to Tool →</div>
+            </div>
+
+            <!-- Quadratic Solver -->
+            <div class="tool-card" onclick="location.href='tools/quadratic.html'">
+                <div class="tool-icon"><i class="fas fa-square-root-alt"></i></div>
+                <h3>Quadratic Solver</h3>
+                <p>Solve quadratic equations with real or complex roots</p>
+                <div class="tool-cta">Go to Tool →</div>
+            </div>
+
+            <!-- Prime Checker -->
+            <div class="tool-card" onclick="location.href='tools/prime.html'">
+                <div class="tool-icon"><i class="fas fa-infinity"></i></div>
+                <h3>Prime Checker</h3>
+                <p>Check if a number is prime and see its factors</p>
+                <div class="tool-cta">Go to Tool →</div>
+            </div>
+
+            <!-- Factorial Calculator -->
+            <div class="tool-card" onclick="location.href='tools/factorial.html'">
+                <div class="tool-icon"><i class="fas fa-exclamation"></i></div>
+                <h3>Factorial Calculator</h3>
+                <p>Calculate factorials (n!) for any positive integer</p>
+                <div class="tool-cta">Go to Tool →</div>
+            </div>
+
+            <!-- Matrix Calculator -->
+            <div class="tool-card" onclick="location.href='tools/matrix.html'">
+                <div class="tool-icon"><i class="fas fa-table"></i></div>
+                <h3>Matrix Calculator</h3>
+                <p>Add, multiply, transpose matrices and find determinants</p>
+                <div class="tool-cta">Go to Tool →</div>
+            </div>
+
+            <!-- Unit Converter -->
+            <div class="tool-card" onclick="location.href='tools/converter.html'">
+                <div class="tool-icon"><i class="fas fa-exchange-alt"></i></div>
+                <h3>Unit Converter</h3>
+                <p>Convert between length, weight, and temperature units</p>
+                <div class="tool-cta">Go to Tool →</div>
+            </div>
+
+            <!-- Graphing Calculator -->
+            <div class="tool-card" onclick="location.href='tools/graphing.html'">
+                <div class="tool-icon"><i class="fas fa-chart-line"></i></div>
+                <h3>Graphing Calculator</h3>
+                <p>Plot mathematical functions with customizable ranges</p>
+                <div class="tool-cta">Go to Tool →</div>
+            </div>
+        </div>
+
+        <section class="about" id="about">
+            <h2 class="section-title">About This Toolkit</h2>
+            <div class="about-content">
+                <div class="about-card">
+                    <i class="fas fa-lightbulb"></i>
+                    <h3>Why We Built This</h3>
+                    <p>A collection of essential math tools designed to help students, teachers, and professionals quickly solve common mathematical problems without complex software.</p>
+                </div>
+                <div class="about-card">
+                    <i class="fas fa-feather"></i>
+                    <h3>Lightweight</h3>
+                    <p>All tools run entirely in your browser - no server processing needed. Fast, private, and works offline after first load.</p>
+                </div>
+                <div class="about-card">
+                    <i class="fas fa-palette"></i>
+                    <h3>Modern Design</h3>
+                    <p>Clean interface with dark/light mode, animations, and responsive layout that works on all devices.</p>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="footer">
+        <div class="footer-content">
+            <div class="footer-section">
+                <h3>Math Toolkit</h3>
+                <p>A free collection of mathematical calculators and tools.</p>
+            </div>
+            <div class="footer-section">
+                <h3>Tools</h3>
+                <ul>
+                    <li><a href="tools/percentage.html">Percentage Calculator</a></li>
+                    <li><a href="tools/pythagorean.html">Pythagorean Theorem</a></li>
+                    <li><a href="tools/quadratic.html">Quadratic Solver</a></li>
+                    <li><a href="tools/prime.html">Prime Checker</a></li>
+                </ul>
+            </div>
+            <div class="footer-section">
+                <h3>Connect</h3>
+                <div class="social-links">
+                    <a href="#" class="social-link"><i class="fab fa-github"></i></a>
+                    <a href="#" class="social-link"><i class="fab fa-twitter"></i></a>
+                    <a href="#" class="social-link"><i class="fas fa-envelope"></i></a>
+                </div>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>© 2023 Math Toolkit. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <script src="js/main.js"></script>
+</body>
+</html>

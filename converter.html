@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Unit Converter | Math Toolkit</title>
+  <link rel="stylesheet" href="../css/main.css">
+  <link rel="stylesheet" href="../css/tools.css">
+</head>
+<body>
+  <header class="header">
+    <nav class="nav">
+      <a href="../index.html" class="logo"><i class="fas fa-calculator"></i> Math Toolkit</a>
+      <div class="nav-links">
+        <a href="../index.html#tools" class="nav-link">All Tools</a>
+        <button id="theme-toggle" class="nav-link">🌙</button>
+      </div>
+    </nav>
+  </header>
+
+  <main class="main tool-page">
+    <div class="tool-container">
+      <h1 class="tool-title"><i class="fas fa-exchange-alt"></i> Unit Converter</h1>
+      
+      <div class="calculator-card">
+        <div class="input-group">
+          <label for="unit-category">Category:</label>
+          <select id="unit-category" class="modern-input">
+            <option value="length">Length</option>
+            <option value="weight">Weight</option>
+            <option value="temperature">Temperature</option>
+          </select>
+        </div>
+        
+        <div class="converter-grid">
+          <div class="converter-input">
+            <input type="number" id="unit-amount" class="modern-input" placeholder="Amount" value="1">
+            <select id="unit-from" class="converter-select"></select>
+          </div>
+          
+          <div class="converter-arrow">
+            <i class="fas fa-arrow-right"></i>
+          </div>
+          
+          <div class="converter-output">
+            <div id="unit-result" class="result-value">0</div>
+            <select id="unit-to" class="converter-select"></select>
+          </div>
+        </div>
+        
+        <button class="modern-button" id="convert-units">Convert</button>
+      </div>
+      
+      <div class="tool-info">
+        <h3>Supported Units</h3>
+        <div class="unit-categories">
+          <div class="unit-category">
+            <h4>Length</h4>
+            <ul>
+              <li>Meters (m)</li>
+              <li>Kilometers (km)</li>
+              <li>Centimeters (cm)</li>
+              <li>Millimeters (mm)</li>
+              <li>Inches (in)</li>
+              <li>Feet (ft)</li>
+              <li>Yards (yd)</li>
+              <li>Miles (mi)</li>
+            </ul>
+          </div>
+          
+          <div class="unit-category">
+            <h4>Weight</h4>
+            <ul>
+              <li>Grams (g)</li>
+              <li>Kilograms (kg)</li>
+              <li>Milligrams (mg)</li>
+              <li>Pounds (lb)</li>
+              <li>Ounces (oz)</li>
+              <li>Tons (t)</li>
+            </ul>
+          </div>
+          
+          <div class="unit-category">
+            <h4>Temperature</h4>
+            <ul>
+              <li>Celsius (°C)</li>
+              <li>Fahrenheit (°F)</li>
+              <li>Kelvin (K)</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+  </main>
+
+  <footer class="footer">
+    <p>© 2023 Math Toolkit. All rights reserved.</p>
+    <div class="social-links">
+      <a href="#" class="social-link"><i class="fab fa-github"></i></a>
+      <a href="#" class="social-link"><i class="fab fa-twitter"></i></a>
+    </div>
+  </footer>
+
+  <script src="../js/main.js"></script>
+  <script src="../js/tools.js"></script>
+</body>
+</html>

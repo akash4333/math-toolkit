@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Pythagorean Theorem | Math Toolkit</title>
+  <link rel="stylesheet" href="../css/main.css">
+  <link rel="stylesheet" href="../css/tools.css">
+</head>
+<body>
+  <header class="header">
+    <nav class="nav">
+      <a href="../index.html" class="logo"><i class="fas fa-calculator"></i> Math Toolkit</a>
+      <div class="nav-links">
+        <a href="../index.html#tools" class="nav-link">All Tools</a>
+        <button id="theme-toggle" class="nav-link">🌙</button>
+      </div>
+    </nav>
+  </header>
+
+  <main class="main tool-page">
+    <div class="tool-container">
+      <h1 class="tool-title"><i class="fas fa-triangle"></i> Pythagorean Theorem</h1>
+      
+      <div class="calculator-card">
+        <div class="input-group">
+          <label for="pythag-a">Side A:</label>
+          <input type="number" id="pythag-a" class="modern-input" placeholder="Length of side A">
+          
+          <label for="pythag-b">Side B:</label>
+          <input type="number" id="pythag-b" class="modern-input" placeholder="Length of side B">
+          
+          <button class="modern-button" id="calculate-pythag">Calculate Hypotenuse</button>
+        </div>
+        
+        <div class="result-display">
+          <span>Hypotenuse (C): </span>
+          <span id="pythag-result" class="result-value">0</span>
+          <button class="copy-btn" data-copy="0"><i class="far fa-copy"></i></button>
+        </div>
+      </div>
+      
+      <div class="tool-info">
+        <h3>Pythagorean Theorem Formula</h3>
+        <p>For any right-angled triangle:</p>
+        <p class="quadratic-formula">a² + b² = c²</p>
+        <p>Where <em>c</em> is the hypotenuse (the side opposite the right angle), and <em>a</em> and <em>b</em> are the other two sides.</p>
+      </div>
+    </div>
+  </main>
+
+  <footer class="footer">
+    <p>© 2023 Math Toolkit. All rights reserved.</p>
+    <div class="social-links">
+      <a href="#" class="social-link"><i class="fab fa-github"></i></a>
+      <a href="#" class="social-link"><i class="fab fa-twitter"></i></a>
+    </div>
+  </footer>
+
+  <script src="../js/main.js"></script>
+  <script src="../js/tools.js"></script>
+</body>
+</html>
